@@ -148,3 +148,10 @@ app.listen(port,(req,res)=>{
 
 ***************************
 =========================
+
+****
+
+Server side user Auth
+
+JSON Web Token (JWT)
+[JSON Web Token (JWT)](https://jwt.io/)
