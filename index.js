@@ -26,7 +26,10 @@ async function run() {
     await client.connect();
 
     const productDB = client.db("productDB");
+    const userDB = client.db("userInfoDB");
+
     const shoesCollection = productDB.collection("shoesCollection");
+    const userCollection = userDB.collection("userCollection");
 
     // product routes
     // product routes create 
@@ -79,6 +82,17 @@ async function run() {
         res.send(result);
 
     });
+
+
+
+    // user info
+
+    app.post('/user',async(req,res)=>{
+        const user=req.body;
+        const result = await userCollection.insertOne(user);
+
+        res.send(result)
+    })
 
 
 
