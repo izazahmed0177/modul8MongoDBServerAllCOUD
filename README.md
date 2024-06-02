@@ -155,3 +155,8 @@ Server side user Auth
 
 JSON Web Token (JWT)
 [JSON Web Token (JWT)](https://jwt.io/)
+
+
+create Token
+jsonwebtoken
+[jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
